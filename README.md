@@ -1,16 +1,13 @@
-# pms-A003 / pms-7003
-PM2.5/PM1.0/PM10 感應器
+# Supported devices
+- Plantower PMSA003
+- Plantower PMS7003
 
-- 可設定待機/正常模式
-- 輸出PM2.5/PM1.0/PM10量測數值
-- 與PMS-7003通用
+# Command
 
-## output:
-```python
-{
-    'apm25': 22,
-    'apm100': 20,
-    'apm10': 18,
-    'time': datetime.datetime(2017, 7, 15, 11, 16, 12, 756304)
-}
+./pmsA003.py [-port '/dev/cu.SLAB_USBtoUART']
+
+# output:
+
+
+{'apm25': 49, 'apm100': 65, 'apm10': 20, 'time': datetime.datetime(2019, 12, 11, 2, 37, 36, 98173)}
 ```
